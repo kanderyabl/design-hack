@@ -1549,6 +1549,18 @@ body {
   }
 }
 
+@media (max-width: 23.4375em) {
+  .weHave__container {
+    padding: 0.625rem 1.875rem 0.625rem;
+  }
+}
+
+@media (max-width: 21.25em) {
+  .weHave__items {
+    row-gap: 0.625rem;
+  }
+}
+
 @media (min-width: 24.56125em) and (max-width: 83.125em) {
 @supports (font-size: clamp( 2.25rem , -0.7381779471rem  +  12.1662291093vw , 9.375rem )) {
     h1 {
@@ -2410,6 +2422,12 @@ body {
 @media (any-hover: hover) {
   .fp-bullets .fp-bullet:hover {
     opacity: 1;
+  }
+}
+
+@media (max-height: 52.5em) {
+  .aboutUs__weHave {
+    position: static;
   }
 }
 
