@@ -24,7 +24,7 @@
 html,
 body {
   height: 100%;
-  min-width: 392px;
+  min-width: 320px;
 }
 
 body {
@@ -726,6 +726,7 @@ body {
 }
 
 .portfolio__btn {
+  max-width: 100%;
   display: inline-block;
   cursor: pointer;
   padding: 0.625rem 9.125rem;
@@ -912,6 +913,12 @@ body {
   -webkit-column-gap: 1.75rem;
      -moz-column-gap: 1.75rem;
           column-gap: 1.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__site {
@@ -1514,11 +1521,11 @@ body {
   }
 
   .portfolio__btn {
-    padding-right: 8.75rem;
+    padding-right: 6.25rem;
   }
 
   .portfolio__btn {
-    padding-left: 8.75rem;
+    padding-left: 6.25rem;
   }
 
   .reviews__title {
@@ -1995,27 +2002,27 @@ body {
     }
 }
 
-@supports (padding-right: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem )) {
+@supports (padding-right: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem )) {
     .portfolio__btn {
-      padding-right: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem );
+      padding-right: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem );
     }
 }
 
-@supports not (padding-right: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem )) {
+@supports not (padding-right: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem )) {
     .portfolio__btn {
-      padding-right: calc(8.75rem + 0.375 * (100vw - 24.56125rem) / 37.9375);
+      padding-right: calc(6.25rem + 2.875 * (100vw - 24.56125rem) / 37.9375);
     }
 }
 
-@supports (padding-left: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem )) {
+@supports (padding-left: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem )) {
     .portfolio__btn {
-      padding-left: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem );
+      padding-left: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem );
     }
 }
 
-@supports not (padding-left: clamp( 8.75rem , 8.5072199341rem  +  0.9884678748vw , 9.125rem )) {
+@supports not (padding-left: clamp( 6.25rem , 4.3886861614rem  +  7.5782537068vw , 9.125rem )) {
     .portfolio__btn {
-      padding-left: calc(8.75rem + 0.375 * (100vw - 24.56125rem) / 37.9375);
+      padding-left: calc(6.25rem + 2.875 * (100vw - 24.56125rem) / 37.9375);
     }
 }
 
