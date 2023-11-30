@@ -1,0 +1,18 @@
+#particles-js {
+  position: fixed;
+  background: #000;
+  width: 150%;
+  height: 100vh;
+  margin: 0;
+  margin-left: -25%;
+  padding: 0;
+  z-index: -1;
+}
+body {
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  #particles-js {
+    width: 300%;
+  }
+}
